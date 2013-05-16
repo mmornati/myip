@@ -2,4 +2,4 @@
 include('getip.php'); 
 header("Content-Type: text/plain"); 
 ?>
-<? echo $ip; ?> 
+<?= str_replace(array(' ', "\n", "\t", "\r"), '', $ip) ?>
