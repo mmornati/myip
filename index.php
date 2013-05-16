@@ -32,10 +32,10 @@
                     <br/><br/>
                     <p>
                     <?php
-                    print "Remote addr: <b>$ip</b><br/>";
-                    print "More detailed host address: <b>$hostaddress</b><br/>";
-                    print "Display browser info: <b>$browser</b> <br/>";
-                    print "Where you came from (if you clicked on a link to get here: ";
+                    print "Remote address: <b>$ip</b><br/>";
+                    print "Host Address: <b>$hostaddress</b><br/>";
+                    print "Browser info: <b>$browser</b> <br/>";
+                    print "Referral page: ";
                     if ($referred == "") {
                         print "<b>Page was directly requested</b><br/>";
                     }
@@ -43,6 +43,24 @@
                         print "<b>$referred</b><br/>";
                     }
                     ?>
+                    </p>
+                    <p>
+                    <h2>Developers Information</h2>
+                    If you want to get your ip address within a script try the url: <a href="http://myip.mornati.net/plain/" target="_blank">http://myip.mornati.net/plain/</a><br/>
+                    Usage example for bash: <br/><br/>
+
+                    <div class="wp_syntax">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td class="code">
+                                <pre class="bash" style="color:#D8D8D8;"><span style="color: #FFF; font-weight:bold;">curl http://myip.mornati.net/plain/; echo</span></pre>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    </p>
 				</div>
 			</div>
 			<span id="credits">

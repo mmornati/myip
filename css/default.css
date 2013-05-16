@@ -24,12 +24,7 @@ body:after
 }
 
 * {
-	border: 0 none;
-	font-size: 1em;
-	list-style: none outside none;
-	margin: 0;
-	outline: medium none;
-	padding: 0;
+	font-size: 13px;
 	text-decoration: none;
 }
 #tabs {
@@ -238,4 +233,46 @@ a {
 
 #clientinfo {
     padding: 10px;
+}
+
+.wp_syntax {
+overflow-x: auto;
+overflow-y: hidden;
+padding-bottom: expression(this.scrollWidth>this.offsetWidth ? 15:0);
+width: 97%;
+}
+
+code, .wp_syntax {
+font-size: 1.2em!important;
+color: #d8d8d8;
+background-color: #1e1e1e;
+margin: 0 0 1.5em 0;
+padding: .75em;
+overflow: auto;
+}
+
+code, .wp_syntax, .wp_syntax pre {
+font-family: "Liberation Mono","bitstream vera sans mono","DejaVu Sans Mono","Courier New",consolas,monaco,courier,monospace!important;
+}
+
+td, th, tr {
+color: #585858;
+}
+
+.wp_syntax pre {
+margin: 0;
+width: auto;
+float: none;
+clear: none;
+overflow: visible;
+line-height: 1.333;
+white-space: pre;
+}
+
+.wp_syntax pre {
+font-family: "Liberation Mono","bitstream vera sans mono","DejaVu Sans Mono","Courier New",consolas,monaco,courier,monospace!important;
+}
+
+pre, code {
+text-shadow: none!important;
 }
