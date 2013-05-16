@@ -29,7 +29,6 @@
                         <b>Your External IP Address:</b><br/>
                         <img src="http://www.mornati.net/myip/imageip.php" border="1">
                     </p>
-                    <br/><br/>
                     <p>
                     <?php
                     print "Remote address: <b>$ip</b><br/>";
