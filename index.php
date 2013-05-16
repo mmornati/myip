@@ -46,7 +46,8 @@
                     </p>
                     <p>
                     <h2>Developers Information</h2>
-                    If you want to get your ip address within a script try the url: <a href="http://myip.mornati.net/plain/" target="_blank">http://myip.mornati.net/plain/</a><br/>
+                    <h2>Plain Text</h2>
+                    If you want to get your ip address within a script try the url: <a href="http://myip.mornati.net/plain" target="_blank">http://myip.mornati.net/plain</a><br/>
                     Usage example for bash: <br/><br/>
 
                     <div class="wp_syntax">
@@ -54,12 +55,15 @@
                           <tbody>
                             <tr>
                               <td class="code">
-                                <pre class="bash" style="color:#D8D8D8;"><span style="color: #FFF; font-weight:bold;">curl http://myip.mornati.net/plain/; echo</span></pre>
+                                <pre class="bash" style="color:#D8D8D8;"><span style="color: #FFF; font-weight:bold;">curl http://myip.mornati.net/plain; echo</span></pre>
                               </td>
                             </tr>
                           </tbody>
                         </table>
                     </div>
+                    <br/>
+                    <h2>JSON</h2>
+                    The site provide also a detailed json output. The address is: <a href="http://myip.mornati.net/details.json" target="blank">http://myip.mornati.net/details.json</a>
                     </p>
 				</div>
 			</div>

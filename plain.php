@@ -1,4 +1,4 @@
 <?php 
-include('../getip.php'); 
+include('getip.php'); 
 ?>
 <? echo $ip; ?> 
