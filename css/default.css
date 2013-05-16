@@ -32,62 +32,12 @@ body:after
 }
 #networks {
 	float: left;
-	width: 100%;
+	width:97%;
 }
 a {
 	color: #666666;
 }
-#networks li {
-	float: left;
-	height: 80px;
-	width: 290px;
-	list-style: none;
-}
-#networks li a img {
-	float: left;
-	margin: 0 10px 0 15px;
-}
-#networks li a {
-	display: block;
-	height: 65px;
-	padding: 10px 0 5px;
-	text-decoration: none;
-	width: 300px;
-}
-#networks li a strong {
-	color: #000000;
-	display: block;
-	font: 18px /20px "Helvetica Neue", Helvetica, Arial, sans-serif;
-	padding-top: 2px;
-}
-#networks li a:hover, #networks li a:focus {
-    background: none repeat scroll 0 0 rgba(164, 173, 183, 0.15);
-}
-#networks li a:active {
-    background: none repeat scroll 0 0 rgba(164, 173, 183, 0.25);
-    padding: 12px 0 3px;
-}
 
-#networks li a:hover img {
-    margin-left: 10px;
-}
-
-#tweetcontainer {
-	overflow: auto;
-}
-
-#tweets li {
-	background-position: 5px 5px;
-	background-repeat: no-repeat;
-	border: 1px solid #999999;
-	height: auto;
-	list-style: none outside none;
-	margin-bottom: 2px;
-	min-height: 55px;
-	padding-left: 65px;
-	padding-top: 2px;
-	width: 500px;
-}
 #content {
 	text-align: left;
 	width: 640px;
@@ -98,70 +48,8 @@ a {
 	margin: 0 auto;
 }
 
-#code {
+#developers {
 	overflow: auto;
-}
-#code.loading {
-	background: url(../images/background-code-loading.gif) center center no-repeat;
-}
-#code .commit {
-	background: url(../images/background-commit.png) repeat-x;
-	cursor: pointer;
-	height: 40px;
-	overflow: hidden;
-	padding: 0 10px;
-}
-#code .commit .repository {
-	color: #000;
-	display: block;
-	font: bold 13pt 'Calibri', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	float: left;
-	line-height: 43px;
-	text-decoration: none;
-}
-#code .commit .date {
-	color: #888;
-	float: right;
-	line-height: 42px;
-}
-#code .commit .message {
-	line-height: 42px;
-	overflow: hidden;
-	padding-left: 10px;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-#code .commit-description {
-	background: url(../images/background-code-description.gif);
-	color: #fff;
-	padding: 10px;
-	-moz-box-shadow: inset #000 0 0 3px;
-	-webkit-box-shadow: inset #000 0 0 3px;
-}
-#code .commit-description p {
-	font-size: 14px;
-	font-weight: bold;
-	text-shadow: #000 0 1px 2px;
-}
-#code .commit-description .link {
-	background-color: rgba(0, 0, 0, 0.3);
-	display: inline-block;
-	padding: 5px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-}
-#code code {
-	display: block;
-	font: 11pt 'consolas', 'Monaco', monospace;
-	margin-bottom: 10px;
-	/*  overflow:auto;*/
-	padding: 0 10px;
-	/*  white-space:pre;*/
-}
-
-#flickr {
-	background-color: #000;
-	border: 2px solid white;
 }
 
 .panes div.firstlevel {
@@ -231,48 +119,58 @@ a {
 	text-decoration: underline;
 }
 
-#clientinfo {
-    padding: 10px;
-}
-
 .wp_syntax {
-overflow-x: auto;
-overflow-y: hidden;
-padding-bottom: expression(this.scrollWidth>this.offsetWidth ? 15:0);
-width: 97%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding-bottom: expression(this.scrollWidth>this.offsetWidth ? 15:0);
+	width: 97%;
 }
 
 code, .wp_syntax {
-font-size: 1.2em!important;
-color: #d8d8d8;
-background-color: #1e1e1e;
-margin: 0 0 1.5em 0;
-padding: .75em;
-overflow: auto;
+	font-size: 1.2em!important;
+	color: #d8d8d8;
+	background-color: #1e1e1e;
+	margin: 0 0 1.5em 0;
+	padding: .75em;
+	overflow: auto;
 }
 
 code, .wp_syntax, .wp_syntax pre {
-font-family: "Liberation Mono","bitstream vera sans mono","DejaVu Sans Mono","Courier New",consolas,monaco,courier,monospace!important;
+	font-family: "Liberation Mono","bitstream vera sans mono","DejaVu Sans Mono","Courier New",consolas,monaco,courier,monospace!important;
 }
 
 td, th, tr {
-color: #585858;
+	color: #585858;
 }
 
 .wp_syntax pre {
-margin: 0;
-width: auto;
-float: none;
-clear: none;
-overflow: visible;
-line-height: 1.333;
-white-space: pre;
+	margin: 0;
+	width: auto;
+	float: none;
+	clear: none;
+	overflow: visible;
+	line-height: 1.333;
+	white-space: pre;
 }
 
 .wp_syntax pre {
-font-family: "Liberation Mono","bitstream vera sans mono","DejaVu Sans Mono","Courier New",consolas,monaco,courier,monospace!important;
+f	ont-family: "Liberation Mono","bitstream vera sans mono","DejaVu Sans Mono","Courier New",consolas,monaco,courier,monospace!important;
 }
 
 pre, code {
-text-shadow: none!important;
+	text-shadow: none!important;
+}
+
+#ipimage {
+	text-align: center;
+}
+
+#ipdetails {
+	padding-top: 40px;
+	line-height: 18px;
+}
+
+#whois {
+	overflow: auto;
+	height: 330px;
 }
