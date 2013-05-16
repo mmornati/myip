@@ -54,7 +54,7 @@
                           <tbody>
                             <tr>
                               <td class="code">
-                                <pre class="bash" style="color:#D8D8D8;"><span style="color: #FFF; font-weight:bold;">curl http://myip.mornati.net/plain; echo</span></pre>
+                                <pre class="bash" style="color:#D8D8D8;"><span style="color: #FFF; font-weight:bold;">curl http://myip.mornati.net/plain</span></pre>
                               </td>
                             </tr>
                           </tbody>
