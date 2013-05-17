@@ -1,5 +1,5 @@
 <?php
-include('getip.php');
+include('functions.php');
 if($ip) {
 	$domain = trim($ip);
 	if(ValidateIP($domain)) {

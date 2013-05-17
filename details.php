@@ -1,5 +1,5 @@
 <?php
-include('getip.php');
+include('functions.php');
 $details = array(
     'remote_addr'=> $ip,
     'host-name' => $hostaddress,

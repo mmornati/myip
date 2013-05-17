@@ -1,4 +1,13 @@
 <?php
+/* private.php file contains the api key to use http://ipinfodb.com/ services
+ * (to retrieve location from ip address).
+ * You just need to create the file with:
+ * <?php
+ *  $API_KEY="your-api-key";
+ * ?> 
+ */
+include('private.php');
+include('ip2locationlite.class.php');
 
 /*************************************************************************
 php easy :: whois lookup script
@@ -285,8 +294,12 @@ function ipCheck() {
     }
     return $ip;
 }
+
 $ip = ipCheck();
 $hostaddress = gethostbyaddr($ip);
 $browser = $_SERVER['HTTP_USER_AGENT'];
 $referred = $_SERVER['HTTP_REFERER'];
+$ipLite = new ip2location_lite;
+$ipLite->setKey($API_KEY);
+
 ?>

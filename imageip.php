@@ -1,5 +1,5 @@
 <?php
-include('getip.php');
+include('functions.php');
 $img_number = imagecreate(200,25);
 $backcolor = imagecolorallocate($img_number,102,102,153);
 $textcolor = imagecolorallocate($img_number,255,255,255);

@@ -25,7 +25,9 @@ function changeImage(area) {
 		$('#areaimage').attr('src', 'images/browser.png');	
 	} else if (area=='network') {
 		$('#areaimage').attr('src', 'images/network.png');	
-	}	
+	} else if (area=='whois') {
+      	$('#areaimage').attr('src', 'images/whois.png');
+    }
 }
 
 function client_data(info)
