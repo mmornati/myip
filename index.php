@@ -255,7 +255,11 @@ include('browser_detection.php');
                                         $a_temp = $browser_info[11];// use the webkit array
                                         $full .= 'User Agent: ';
                                         $full .= ucwords($a_temp[0]) . ' ' . $a_temp[1];
-                                        $browser_icon = "chrome.png";
+                                        if (stripos($a_temp[0], 'safari') !== false) {
+                                        	$browser_icon = "safari.png";
+                                        } else {
+                                        	$browser_icon = "chrome.png";
+                                        }
                                         break;
                                     case 'ie':
                                         $full .= 'User Agent: ';
@@ -345,4 +349,3 @@ include('browser_detection.php');
 		</div>
 	</body>
 </html>
-
