@@ -91,6 +91,10 @@ include('browser_detection.php');
                                 $full = '';
                                 $handheld = '';
 
+                                $device_icon = '';
+                                $os_icon = '';
+                                $browser_icon = '';
+
                                 // change this to match your include path/and file name you give the script
                                 $browser_info = browser_detection('full');
 
@@ -126,31 +130,51 @@ include('browser_detection.php');
                                     if ( $browser_info[13][5] ) {
                                         $handheld .= 'Server: ' . ucwords( $browser_info[13][5] . ' ' .  $browser_info[13][6] ) . '<br />';
                                     }
+
+                                    if (strcasecmp($browser_info[13][3], 'android') == 0) {
+                                        $device_icon = "android.png";
+                                    } elseif (strcasecmp($browser_info[13][3], 'iphone') == 0) {
+                                        $device_icon = "iphone.png";
+                                    } elseif (strcasecmp($browser_info[13][3], 'ipad') == 0) {
+                                        $device_icon = "ipad.png";
+                                    } else {
+                                        $device_icon = "smartphone.png";
+                                    }
+
+                                    $handheld .= "<img id='handhelddev' class='icon' src='images/$device_icon'/>";
                                     $handheld .= '</p>';
                                 }
 
                                 switch ($browser_info[5]) {
                                     case 'win':
                                         $os .= 'Windows ';
+                                        $os_icon = 'windows.png';
                                         break;
                                     case 'nt':
                                         $os .= 'Windows<br />NT ';
+                                        $os_icon = 'windows.png';
                                         break;
                                     case 'lin':
                                         $os .= 'Linux<br /> ';
+                                        $os_icon = 'linux.png';
                                         break;
                                     case 'mac':
                                         $os .= 'Mac ';
+                                        $os_icon = 'mac.png';
                                         break;
                                     case 'iphone':
                                         $os .= 'Mac ';
+                                        $os_icon = 'mac.png';
                                         break;
                                     case 'unix':
                                         $os .= 'Unix<br />Version: ';
+                                        $os_icon = 'linux.png';
                                         break;
                                     default:
                                         $os .= $browser_info[5];
                                 }
+
+                                $os .= "<img id='osicon' class='icon' src='images/$os_icon'/>";
 
                                 if ( $browser_info[5] == 'nt' ) {
                                     if ( $browser_info[5] == 'nt' ) {
@@ -220,15 +244,18 @@ include('browser_detection.php');
                                         $full .= $a_temp[1] . '<br />';
                                         $full .= 'ProductSub: ';
                                         $full .= ( $a_temp[4] != '' ) ? $a_temp[4] : 'Not Available';
+                                        $browser_icon = "firefox.png";
                                         break;
                                     case 'ns':
                                         $full .= 'Browser: Netscape<br />';
                                         $full .= 'Full Version Info: ' . $browser_info[1];
+                                        $browser_icon = "netscape.png";
                                         break;
                                     case 'webkit':
                                         $a_temp = $browser_info[11];// use the webkit array
                                         $full .= 'User Agent: ';
                                         $full .= ucwords($a_temp[0]) . ' ' . $a_temp[1];
+                                        $browser_icon = "chrome.png";
                                         break;
                                     case 'ie':
                                         $full .= 'User Agent: ';
@@ -249,6 +276,7 @@ include('browser_detection.php');
                                             $full .= '<br />Full Version Info: ';
                                             $full .= ( $browser_info[1] ) ? $browser_info[1] : 'Not Available';
                                         }
+                                        $browser_icon = "ie.png";
                                         break;
                                     default:
                                         $full .= 'User Agent: ';
@@ -257,6 +285,8 @@ include('browser_detection.php');
                                         $full .= ( $browser_info[1] ) ? $browser_info[1] : 'Not Available';
                                         break;
                                 }
+
+                                $full .= "<img id='browsericon' class='icon' src='images/$browser_icon'/>";
 
                                 if ( $browser_info[1] != $browser_info[9] ) {
                                     $full .= '<br />Main Version Number: ' . $browser_info[9];

@@ -174,3 +174,25 @@ pre, code {
 	overflow: auto;
 	height: 400px;
 }
+
+#osicon {
+    margin-top: -45px;
+    padding-left: 100px;
+    position: absolute;
+}
+
+.icon {
+    width: 80px;
+}
+
+#browsericon {
+    margin-top: -15px;
+    padding-left: 10px;
+    position: absolute;
+}
+
+#handhelddev {
+    margin-top: -65px;
+    padding-left: 190px;
+    position: absolute;
+}
